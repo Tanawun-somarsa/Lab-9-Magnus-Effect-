@@ -223,7 +223,7 @@ Transform:
   m_GameObject: {fileID: 151439011}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.49, y: 1.03, z: -2.13}
+  m_LocalPosition: {x: -9.49, y: 1.03, z: -1.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -425,13 +425,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.103178784, y: -0.43244737, z: 0.049890548, w: 0.8943458}
-  m_LocalPosition: {x: 1.37, y: 1.77, z: -4.55}
+  m_LocalRotation: {x: 0.16087583, y: -0.6803971, z: 0.16427778, w: 0.6958388}
+  m_LocalPosition: {x: 4.18, y: 4.36, z: -0.36999997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 13.162, y: -51.611, z: 0}
+  m_LocalEulerAnglesHint: {x: 26.579, y: -88.567, z: 0.622}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,7 +580,7 @@ Transform:
   m_GameObject: {fileID: 403521174}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.28, y: 1.03, z: 2.05}
+  m_LocalPosition: {x: -9.28, y: 1.03, z: 1.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1138,6 +1138,7 @@ GameObject:
   - component: {fileID: 1570647366}
   - component: {fileID: 1570647365}
   - component: {fileID: 1570647370}
+  - component: {fileID: 1570647371}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1268,11 +1269,25 @@ ConstantForce:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570647364}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
+  m_Enabled: 0
+  m_Force: {x: -30, y: 0, z: 0}
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &1570647371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570647364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5777721750ceb34392db7456788dc25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: -10, y: 0, z: 8}
+  spin: {x: 0, y: 1, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
